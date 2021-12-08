@@ -1,9 +1,51 @@
 /* Don't forget that media queries are required for this project */
+
+* {
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    height: 70px;
+
+    background-color:  #A34545;
+    display: inline-flex;
+    width: 100%;
+  }
+  
+
 body {
     margin: 0px;
     background-color: #F9F1F0;
 }
 
-dest {
-   background-color: #A34545; 
+.flex-container {
+flex-direction: row;
+
+}
+
+.dest {
+    font-size: 10px;
+    height: 105px; 
+   
+    font-size: 30px;
+    background-color: #A34545; 
+    text-align: center;
+}
+.hopa {
+    display: flex;
+    font-size: 30px;
+    margin: 60px;
+    justify-content: space-between;
+}
+.car{
+    background-color: #F0D0C9;
+    width: 30%;
+   
+    text-align: center;
+}
+
+footer {
+    background-color: #A34545;
 }
