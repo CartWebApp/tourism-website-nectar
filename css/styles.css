@@ -1,1 +1,5 @@
 /* Don't forget that media queries are required for this project */
+body {
+    margin: 0px;
+    background-color: #F9F1F0;
+}
