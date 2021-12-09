@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*fix the navbar drop-down*/
+
 ul {
     list-style: none;
     overflow: hidden;
