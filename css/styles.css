@@ -5,12 +5,17 @@
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
     overflow: hidden;
-    height: 70px;
+    height: 125px;
     background-color: #A34545;
     display: inline-flex;
     width: 100%;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
 body {
@@ -37,11 +42,18 @@ flex-direction: row;
     margin: 60px;
     justify-content: space-between;
 }
-.car{
+.csc{
     background-color: #F0D0C9;
     width: 30%;
    
     text-align: center;
+}
+
+.hiro {
+    width: 100%;
+    height: 1500px;
+    object-fit: cover;
+    object-position: 75% 75%;
 }
 
 footer {
