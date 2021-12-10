@@ -41,7 +41,6 @@ body {
 
 .flex-container {
 flex-direction: row;
-
 }
 
 .dest {
@@ -79,6 +78,11 @@ flex-direction: row;
     background-color:#A34545 ;
     padding: 10px 20px 10px 20px;
     color: #F0D0C9;
+}
+.car{
+    color:#B24040; 
+    background-color: #F0D0C9;
+    padding: 10px 20px 10px 20px;
 }
 
 footer {
