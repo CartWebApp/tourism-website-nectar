@@ -8,3 +8,92 @@ body {
     text-align: center;
     color: #ECB2A3;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+/*fix the navbar drop-down*/
+
+nav {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+    height: 125px;
+    background-color: #A34545;
+    display: inline-flex;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+body {
+    margin: 0px;
+    background-color: #F9F1F0;
+    color: #F0D0C9;
+}
+
+.flex-container {
+flex-direction: row;
+}
+
+.dest {
+    font-size: 10px;
+    height: 105px; 
+   
+    font-size: 30px;
+    background-color: #A34545; 
+    text-align: center;
+  
+}
+.hopa {
+    display: flex;
+    font-size: 30px;
+    margin: 60px;
+    justify-content: space-between;
+ 
+}
+.csc{
+    background-color: #F0D0C9;
+    width: 30%;
+    text-align: center;
+    color: #B24040;
+}
+
+.hiro {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    object-position: 75% 75%;
+}
+
+.to {
+    height: 300px;
+    background-color:#A34545 ;
+    padding: 10px 20px 10px 20px;
+    color: #F0D0C9;
+}
+.car{
+    color:#B24040; 
+    background-color: #F0D0C9;
+    padding: 10px 20px 10px 20px;
+}
+
+footer {
+    background-color: #A34545;
+}
