@@ -53,13 +53,11 @@ flex-direction: row;
 }
 
 .dest {
-    font-size: 10px;
     height: 105px; 
-   
-    font-size: 30px;
+    font-size: 40px;
     background-color: #A34545; 
     text-align: center;
-  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .hopa {
     display: flex;
@@ -73,6 +71,7 @@ flex-direction: row;
     width: 30%;
     text-align: center;
     color: #B24040;
+   
 }
 
 .hiro {
@@ -92,8 +91,24 @@ flex-direction: row;
     color:#B24040; 
     background-color: #F0D0C9;
     padding: 10px 20px 10px 20px;
+   
+}
+
+.sde{
+    height: 500px;
+    width: 35%;
+    margin: 30px;
+   
+}
+
+.trans {
+    width: 30%;
+    height: 450px;
+    margin-left: 45px;
 }
 
 footer {
     background-color: #A34545;
 }
+
+
