@@ -3,6 +3,7 @@ body {
     background-color: #F9F1F0;
     margin: 0px;
 }
+
 .header {
     background-color: #A34545;
     text-align: center;
@@ -15,30 +16,67 @@ body {
 
 /*fix the navbar drop-down*/
 
-nav {
-    display: flex;
-    text-decoration: none;
-    text-align: center;
-    justify-content: space-between;
+nav ul {
+    padding: 0.5%;
     margin: 0;
-    padding: 0;
+    list-style-type: none;
+    position: relative;
+    background-color: #A34545;
 }
 
-ul {
-    list-style: none;
-    overflow: hidden;
-    height: 125px;
-    background-color: #A34545;
-    display: inline-flex;
-    width: 100%;
-    margin: 0px;
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 6vh;
+    font-size: 5vh;
     text-align: center;
-    justify-content: space-between;
+}
+
+nav a, nav a:visited {
+    color: #F0D0C9;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 11vh;
+}
+
+nav a:hover {
+    background-color: #803434d0;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+    background-color: #d1b4ae7c;
+}
+
+nav ul ul li {
+    width: 20vh;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: #F0D0C9;
+}
+
+nav ul ul li a:hover {
+    background-color: #d1b4aec7;
+}
+
+nav ul ul li a, nav ul ul li a:visited {
+    color:#A34545;
+    font-size: 2.5em;
+    text-align: left;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 15vh;
+    height: 15vh;
     vertical-align: middle;
 }
 
@@ -57,7 +95,7 @@ flex-direction: row;
     font-size: 40px;
     background-color: #A34545; 
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 .hopa {
     display: flex;
@@ -89,8 +127,8 @@ flex-direction: row;
 }
 .adv{
     color:#B24040; 
-    background-color: #F0D0C9;
     padding: 10px 20px 10px 20px;
+    background: #F0D0C9;
    
 }
 
