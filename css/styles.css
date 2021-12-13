@@ -149,7 +149,7 @@ footer {
     background-color: #A34545;
 }
 
-/* Image Carousel */
+/* Image Carousel for the Home Page*/
 .carousel, .carousel1, .carousel2 {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.205);
@@ -281,4 +281,31 @@ footer {
 #carousel2-3:checked ~ .control-3 ~ .carousel2-indicators li:nth-child(3) .carousel2-bullet,
 #carousel2-4:checked ~ .control-4 ~ .carousel2-indicators li:nth-child(4) .carousel2-bullet {
     color: #D2B6AF;
+}
+
+.line {
+    height: 7px;
+    color: #F1C3B8;
+    background-color: #F1C3B8;
+    width: 35%;
+    align-self: center;
+    margin: 0px 80px 0px 80px;
+}
+
+.pos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: #A34545;
+    margin-top: 60px;
+    height: 175px;
+}
+
+.headie {
+    align-self: center;
+}
+
+.headie1 {
+    font-size: 80px;
 }
