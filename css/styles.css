@@ -111,38 +111,38 @@ footer {
     background-color: #A34545;
 }
 
-/* Image Car */
-.carousel {
+/* Image Carousel */
+.carousel, .carousel1, .carousel2 {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.205);
     margin-top: 26px;
 }
 
-.carousel-inner {
+.carousel-inner, .carousel1-inner, .carousel2-inner {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-.carousel-open:checked + .carousel-item {
+.carousel-open:checked + .carousel-item, .carousel1-open:checked + .carousel1-item, .carousel2-open:checked + .carousel2-item {
     position: static;
     opacity: 100;
 }
 
-.carousel-item {
+.carousel-item, .carousel1-item, .carousel2-item {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
 
-.carousel-item img {
+.carousel-item img, .carousel1-item img, .carousel2-item img {
     display: block;
     height: auto;
     max-width: 100%;
 }
 
-.carousel-control {
+.carousel-control, .carousel1-control, .carousel2-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
     color: #fff;
@@ -162,15 +162,15 @@ footer {
     z-index: 10;
 }
 
-.carousel-control.prev {
+.carousel-control.prev, .carousel1-control.prev, .carousel2-control.prev {
     left: 2%;
 }
 
-.carousel-control.next {
+.carousel-control.next, .carousel1-control.next, .carousel2-control.next {
     right: 2%;
 }
 
-.carousel-control:hover {
+.carousel-control:hover, .carousel1-control:hover, .carousel2-control:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
 }
@@ -182,7 +182,21 @@ footer {
     display: block;
 }
 
-.carousel-indicators {
+#carousel1-1:checked ~ .control-1,
+#carousel1-2:checked ~ .control-2,
+#carousel1-3:checked ~ .control-3,
+#carousel1-4:checked ~ .control-4 {
+    display: block;
+}
+
+#carousel2-1:checked ~ .control-1,
+#carousel2-2:checked ~ .control-2,
+#carousel2-3:checked ~ .control-3,
+#carousel2-4:checked ~ .control-4 {
+    display: block;
+}
+
+.carousel-indicators, .carousel1-indicators, .carousel2-indicators {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -194,19 +208,19 @@ footer {
     z-index: 10;
 }
 
-.carousel-indicators li {
+.carousel-indicators li, .carousel1-indicators li, .carousel2-indicators li {
     display: inline-block;
     margin: 0 5px;
 }
 
-.carousel-bullet {
+.carousel-bullet, .carousel1-bullet, .carousel2-bullet {
     color: #fff;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
 
-.carousel-bullet:hover {
+.carousel-bullet:hover, .carousel1-bullet:hover, .carousel2-bullet:hover {
     color: #aaaaaa;
 }
 
@@ -214,5 +228,19 @@ footer {
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
 #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
+    color: #D2B6AF;
+}
+
+#carousel1-1:checked ~ .control-1 ~ .carousel1-indicators li:nth-child(1) .carousel1-bullet,
+#carousel1-2:checked ~ .control-2 ~ .carousel1-indicators li:nth-child(2) .carousel1-bullet,
+#carousel1-3:checked ~ .control-3 ~ .carousel1-indicators li:nth-child(3) .carousel1-bullet,
+#carousel1-4:checked ~ .control-4 ~ .carousel1-indicators li:nth-child(4) .carousel1-bullet {
+    color: #D2B6AF;
+}
+
+#carousel2-1:checked ~ .control-1 ~ .carousel2-indicators li:nth-child(1) .carousel2-bullet,
+#carousel2-2:checked ~ .control-2 ~ .carousel2-indicators li:nth-child(2) .carousel2-bullet,
+#carousel2-3:checked ~ .control-3 ~ .carousel2-indicators li:nth-child(3) .carousel2-bullet,
+#carousel2-4:checked ~ .control-4 ~ .carousel2-indicators li:nth-child(4) .carousel2-bullet {
     color: #D2B6AF;
 }
