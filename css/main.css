@@ -70,7 +70,7 @@ nav ul ul li a:hover {
 
 nav ul ul li a, nav ul ul li a:visited {
     color:#A34545;
-    font-size: 2.5em;
+    font-size: 2.4em;
     text-align: left;
 }
 
@@ -89,6 +89,64 @@ body {
 .flex-container {
 flex-direction: row;
 }
+
+/*Heading*/
+.line {
+    height: 7px;
+    color: #F1C3B8;
+    background-color: #F1C3B8;
+    width: 35%;
+    align-self: center;
+    margin: 0px 80px 0px 80px;
+}
+
+.pos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: #A34545;
+    margin-top: 60px;
+    height: 175px;
+}
+
+.headie {
+    align-self: center;
+}
+
+.headie1 {
+    font-size: 80px;
+    font-family: 'Segoe UI';
+}
+
+/*Format for the Article Contents*/
+.contents {
+    display: flex;
+    background-color: #F0D0C9;
+    margin: 60px 80px 0px 80px;
+}
+
+.text {
+    font-size: 30px;
+    color: #9B2828;
+    width: 50%;
+    padding: 40px;
+}
+
+.textie {
+    margin: 0px;
+    font-family: Georgia;
+}
+
+.textie1 {
+    margin: 0px;
+    font-family: Cambria;
+}
+
+.img {
+    width: 50%;
+}
+
 
 .dest {
     height: 105px; 
@@ -281,31 +339,4 @@ footer {
 #carousel2-3:checked ~ .control-3 ~ .carousel2-indicators li:nth-child(3) .carousel2-bullet,
 #carousel2-4:checked ~ .control-4 ~ .carousel2-indicators li:nth-child(4) .carousel2-bullet {
     color: #D2B6AF;
-}
-
-.line {
-    height: 7px;
-    color: #F1C3B8;
-    background-color: #F1C3B8;
-    width: 35%;
-    align-self: center;
-    margin: 0px 80px 0px 80px;
-}
-
-.pos {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: space-around;
-    background-color: #A34545;
-    margin-top: 60px;
-    height: 175px;
-}
-
-.headie {
-    align-self: center;
-}
-
-.headie1 {
-    font-size: 80px;
 }
