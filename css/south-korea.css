@@ -200,3 +200,14 @@ nav ul ul li a, nav ul ul li a:visited {
 footer {
     background-color: #A34545;
 }
+
+.sec {
+    margin: 80px 160px 0px 160px;
+}
+.pic {
+    width: 30%;
+    background-image: url(/tourism-img/southkorea-dis/Decorative-Street-Lamps-Under-Bright-Cloudy-Sky-At-Sunset.jpg);
+}
+.art {
+    background-color: #F0D0C9;
+}
