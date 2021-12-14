@@ -123,7 +123,7 @@ nav ul ul li a, nav ul ul li a:visited {
 .contents {
     display: flex;
     background-color: #F0D0C9;
-    margin: 50px 80px 0px 80px;
+    margin: 60px 80px 0px 80px;
 }
 
 .text {
@@ -155,27 +155,48 @@ nav ul ul li a, nav ul ul li a:visited {
     margin: 0px 80px 0px 80px;
 }
 
+/*Locations Section*/
 .imglo {
     width: 50%;
     background-image: url(/tourism-img/southkorea-about/Car-Passing-Through-Road-Beside-Building-Photo.jpg);
     background-size: 100%;
     background-position: 0% 80%;
 }
-
+/*Demographics and major Cities Section*/
 .imgdmc {
     width: 50%;
     background-image: url(/tourism-img/southkorea-about/People-Walking-On-Street-During-Daytime-Photo.jpg);
     background-size: 125%;
     background-position: 0% 80%;
 }
-
+/*Exports Section*/
 .imgex {
     width: 50%;
     background-image: url(/tourism-img/southkorea-about/Assorted-Clothes-Inside-Room-Photo.jpg);
     background-size: 120%;
     background-position: 0% 75%;
 }
-
+/*Natural Locations Section*/
 .imgnl {
-    
+    width: 50%;
+    background-image: url(/tourism-img/southkorea-about/Brown-And-Red-Trees-During-Daytime-Photo.jpg);
+    background-size: 165%;
+    background-position: center;
+}
+/*Cultural Overview Section*/
+.imgco {
+    width: 50%;
+    background-image: url(/tourism-img/southkorea-about/Free-Seoul.jpg);
+    background-size: 100%;
+    background-position: 0% 80%;
+}
+/*Brief History Section*/
+.imgbh {
+    width: 50%;
+    background-image: url(/tourism-img/southkorea-about/South-Korea-Palace-Traditional.jpg);
+    background-size: 220%;
+    background-position: center;
+}
+footer {
+    background-color: #A34545;
 }
