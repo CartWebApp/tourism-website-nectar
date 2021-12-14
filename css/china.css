@@ -1,0 +1,151 @@
+/* Don't forget that media queries are required for this project */
+body {
+    background-color: #F9F1F0;
+    margin: 0px;
+}
+
+.header {
+    background-color: #A34545;
+    text-align: center;
+    color: #ECB2A3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*fix the navbar drop-down*/
+
+nav ul {
+    padding: 0.5%;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    background-color: #A34545;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 6vh;
+    font-size: 5vh;
+    text-align: center;
+}
+
+nav a, nav a:visited {
+    color: #F0D0C9;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 11vh;
+}
+
+nav a:hover {
+    background-color: #803434d0;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+    background-color: #d1b4ae7c;
+}
+
+nav ul ul li {
+    width: 20vh;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: #F0D0C9;
+}
+
+nav ul ul li a:hover {
+    background-color: #d1b4aec7;
+}
+
+nav ul ul li a, nav ul ul li a:visited {
+    color:#A34545;
+    font-size: 2.4em;
+    text-align: left;
+}
+
+.logo {
+    width: 15vh;
+    height: 15vh;
+    vertical-align: middle;
+}
+
+body {
+    margin: 0px;
+    background-color: #F9F1F0;
+    color: #F0D0C9;
+}
+
+
+
+.to {
+    height: 300px;
+    background-color:#A34545 ;
+    padding: 10px 20px 10px 20px;
+    color: #F0D0C9;
+}
+
+.whl {
+    display: flex;
+}
+
+.adv{
+    color:#B24040; 
+    background: #F0D0C9; 
+    width: 50%;
+    height: 500px;
+    font-size: 25px;
+    padding: 50px;
+}
+
+.sde {
+    width: 50%;
+    height: 500px;
+}
+
+.trans {
+    width: 30%;
+    height: 450px;
+    margin-left: 45px;
+}
+
+.hiro {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    object-position: 75% 75%;
+}
+
+.dest {
+    height: 105px; 
+    font-size: 40px;
+    background-color: #A34545; 
+    text-align: center;
+}
+
+footer {
+    background-color: #A34545;
+}
+
+.dis{
+    height: 500px;
+    background-color: #F0D0C9;
+    width: 50%;
+    color: #A34545;
+padding: 50px;
+}
+
+.whle{
+ display: flex;
+ justify-content: space-around;
+}
