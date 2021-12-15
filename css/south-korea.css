@@ -200,14 +200,30 @@ nav ul ul li a, nav ul ul li a:visited {
 footer {
     background-color: #A34545;
 }
-
+/*Discover Page*/
 .sec {
     margin: 80px 160px 0px 160px;
 }
-.pic {
-    width: 30%;
-    background-image: url(/tourism-img/southkorea-dis/Decorative-Street-Lamps-Under-Bright-Cloudy-Sky-At-Sunset.jpg);
+.img {
+    width: 100%;
 }
 .art {
     background-color: #F0D0C9;
+}
+.pic {
+    margin-left: 25px;
+    width: 50%;
+}
+.texty {
+    font-size: 17px;
+    color: #9B2828;
+    width: 50%;
+    padding: 40px;
+}
+
+.texty1 {
+    margin: 0px;
+    font-family: Georgia;
+    line-height: 1.6;
+    text-indent: 50px;
 }
