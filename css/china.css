@@ -16,6 +16,12 @@ body {
 
 /*fix the navbar drop-down*/
 
+#nav1 {
+    width: 100%;
+    position: fixed;
+    box-shadow: 2px 4px 8px rgb(31, 3, 3)
+}
+
 nav ul {
     padding: 0.5%;
     margin: 0;
@@ -44,7 +50,8 @@ nav a, nav a:visited {
 nav ul ul {
     display: none;
     position: absolute;
-    top: 11vh;
+    top: 9.65vh;
+    box-shadow: 2px 4px 8px rgb(31, 3, 3)
 }
 
 nav a:hover {
@@ -62,6 +69,7 @@ nav ul ul li {
     display: list-item;
     position: relative;
     background-color: #F0D0C9;
+    box-shadow: 4px 2px 8px rgb(31, 3, 3)
 }
 
 nav ul ul li a:hover {
@@ -75,9 +83,36 @@ nav ul ul li a, nav ul ul li a:visited {
 }
 
 .logo {
-    width: 15vh;
-    height: 15vh;
+    width: 12.5vh;
+    height: 12.5vh;
     vertical-align: middle;
+}
+
+.hiro1 {
+    height: 50vh;
+    display: flex;
+    background-position: 50% 90%;
+    background-image: url(../tourism-img/china-about/Top-Angle-Photography-Of-Cup-Photo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro2 {
+    height: 50vh;
+    display: flex;
+    background-position: 50% 50%;
+    background-image: url(../tourism-img/china-dis/Photo-Of-River-Near-Mountains-Covered-With-Trees.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro3 {
+    height: 50vh;
+    display: flex;
+    background-position: bottom;
+    background-image: url(../tourism-img/china-visit/Sunset-China-Pagoda-Lotus.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 body {
@@ -86,31 +121,27 @@ body {
     color: #F0D0C9;
 }
 
-
-
-.to {
-    height: 300px;
-    background-color:#A34545 ;
-    padding: 10px 20px 10px 20px;
-    color: #F0D0C9;
-}
-
-.whl {
-    display: flex;
-}
-
-.adv{
-    color:#B24040; 
-    background: #F0D0C9; 
-    width: 50%;
-    height: 500px;
-    font-size: 25px;
-    padding: 50px;
-}
+/* img classes */
 
 .sde {
     width: 50%;
-    height: 500px;
+    height: 600px;
+}
+
+/* visit */
+.to {
+    height: 45%;
+    background-color:#A34545 ;
+    padding: 10px 20px 10px 20px;
+    color: #F0D0C9;
+    font-size: 27px;
+    
+}
+
+.to p {
+    column-count: 2;
+    column-gap: 40px;
+    margin: 30px;
 }
 
 .trans {
@@ -119,39 +150,133 @@ body {
     margin-left: 45px;
 }
 
-.hiro {
-    width: 100%;
-    height: 650px;
-    object-fit: cover;
-    object-position: 75% 75%;
+.hend{
+    margin-left: 42%;
 }
 
-.dest {
-    height: 105px; 
-    font-size: 40px;
-    background-color: #A34545; 
-    text-align: center;
-}
+
+
+
 
 footer {
     background-color: #A34545;
 }
 
+/* discover */
 .dis{
-    height: 500px;
+    height: 700px;
     background-color: #F0D0C9;
     width: 50%;
     color: #A34545;
 padding: 50px;
+font-size: 1.6em;
 }
+
 
 .whle{
  display: flex;
- justify-content: space-around;
+ align-content: space-between;
+ margin: 30px;
+}
 
+.hl{
+    background-color: #A34545;
+    width: 7px;
+
+}
+
+.dn{
+    width: 50%;
+    height: 700px;
+}
+
+.ho{
+    display: flex;
+    align-content: space-between;
+    margin: 30px;
+}
+
+.hop{
+    width: 50%;
+    height: 1100px;
+}
+
+.hope{
+    height: 1100px;
+    background-color: #F0D0C9;
+    width: 50%;
+    color: #A34545;
+padding: 50px;
+font-size: 1.6em;
+}
+
+
+/* abt */
+.lin {
+  height: 100px;
+  background-color: #A34545;
+}
+
+.adv{
+    color:#B24040; 
+    background: #F0D0C9; 
+    width: 50%;
+    height: 600px;
+    font-size: 2em;
+    padding: 60px;
 }
 
 .line{
     background-color: #A34545;
     height: 10px;
+    width: 92.18%;
+    margin-left: 80px;
+}
+
+.whl {
+    display: flex;
+  margin:  60px 80px 0px;
+}
+/* headings abt */
+.hed {
+    display: flex;
+    background-color: #A34545;
+    height: 175px;
+    align-items: center;
+    margin: 30px 0px 30px 0px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.lne{
+
+    background: #F0D0C9; 
+    width: 35%;
+   height: 10px;
+}
+
+.fce{
+    font-size: 40px;
+}
+
+/* last 4 abt */
+.bgg{
+    color:#B24040; 
+    background: #F0D0C9; 
+    width: 50%;
+    height: 850px;
+    font-size: 2em;
+    padding: 60px;
+}
+
+/* parent */
+.bg{
+display: flex;
+margin:  60px 80px 0px;
+}
+
+/* img */
+.bge{
+    width: 50%;
+    height: 850px;
 }
