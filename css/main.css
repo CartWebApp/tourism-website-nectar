@@ -148,6 +148,9 @@ flex-direction: row;
     display: flex;
     object-fit: cover;
     object-position: 75% 75%;
+    background-position-x: center;
+    background-image: "https://www.pexels.com/photo/a-man-sitting-outside-of-the-famous-petra-3214958/;
+    background-size: cover;
 }
 
 
