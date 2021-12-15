@@ -127,7 +127,7 @@ nav ul ul li a, nav ul ul li a:visited {
 }
 
 .text {
-    font-size: 30px;
+    font-size: 17px;
     color: #9B2828;
     width: 50%;
     padding: 40px;
@@ -160,7 +160,7 @@ nav ul ul li a, nav ul ul li a:visited {
     width: 50%;
     background-image: url(/tourism-img/southkorea-about/Car-Passing-Through-Road-Beside-Building-Photo.jpg);
     background-size: 100%;
-    background-position: 0% 80%;
+    background-position: 0% 90%;
 }
 /*Demographics and major Cities Section*/
 .imgdmc {
@@ -180,8 +180,8 @@ nav ul ul li a, nav ul ul li a:visited {
 .imgnl {
     width: 50%;
     background-image: url(/tourism-img/southkorea-about/Brown-And-Red-Trees-During-Daytime-Photo.jpg);
-    background-size: 165%;
-    background-position: center;
+    background-size: 100%;
+    background-position: 0% 75%;
 }
 /*Cultural Overview Section*/
 .imgco {
@@ -201,24 +201,42 @@ footer {
     background-color: #A34545;
 }
 /*Discover Page*/
+.sections {
+    display: flex;
+    background-color: #F0D0C9;
+    margin: 60px 80px 0px 80px;
+}
 .sec {
     margin: 80px 160px 0px 160px;
 }
-.img {
+.pic {
+    margin: 40px 20px 40px 40px;
+    width: 30%;
+}
+.imgtc1 {
     width: 100%;
+    background-image: url(/tourism-img/southkorea-dis/Tiger-Dragon-Summer.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 48%;
+    margin-bottom: 20px;
+}
+.imgtc2 {
+    width: 100%;
+    background-image: url(/tourism-img/southkorea-dis/Decorative-Street-Lamps-Under-Bright-Cloudy-Sky-At-Sunset.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 48%;
+    margin-bottom: 40px;
 }
 .art {
     background-color: #F0D0C9;
 }
-.pic {
-    margin-left: 25px;
-    width: 50%;
-}
 .texty {
     font-size: 17px;
     color: #9B2828;
-    width: 50%;
-    padding: 40px;
+    width: 70%;
+    padding: 40px 40px 40px 20px;
 }
 
 .texty1 {
@@ -226,4 +244,17 @@ footer {
     font-family: Georgia;
     line-height: 1.6;
     text-indent: 50px;
+}
+.veli {
+    width: 7px;
+    color: #F1C3B8;
+    background-color: #A34545;
+}
+.imgtc3 {
+    width: 100%;
+    background-image: url(/tourism-img/southkorea-dis/Black-Bean-Noodle.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+    margin-bottom: 20px;
 }

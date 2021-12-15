@@ -148,4 +148,10 @@ padding: 50px;
 .whle{
  display: flex;
  justify-content: space-around;
+
+}
+
+.line{
+    background-color: #A34545;
+    height: 10px;
 }
