@@ -3,7 +3,8 @@
 #nav1 {
     width: 100%;
     position: fixed;
-    box-shadow: 2px 4px 8px rgb(31, 3, 3)   
+    box-shadow: 2px 4px 8px rgb(31, 3, 3);
+    z-index: 15;
 }
 
 nav ul {
@@ -96,11 +97,14 @@ body {
     flex-direction: column;
 }
 
-.line {
+.flex-container2 {
+    display: flex;
+}
+
+.lines {
     height: 7px;
-    color: #F1C3B8;
     background-color: #F1C3B8;
-    width: 35%;
+    width: 40%;
     align-self: center;
     margin: 0px 80px 0px 80px;
 }
@@ -113,11 +117,18 @@ body {
     justify-content: space-around;
 }
 
-section {
+.s1 {
     background-color: #F0D0C9;
     display: flex;
     flex-direction: row;
     margin: 10vh;
+}
+
+.s2 {
+    background-color: #A34545;
+    margin: 7.5vh;
+    padding: 5vh;
+    column-count: 2;
 }
 
 .p {
@@ -127,40 +138,66 @@ section {
     margin: 5vh;
 }
 
-#map {
-    width: 47.5%;
-    height: 40vh;
-    object-fit: cover;
+.p2 {
+    color: #9B2828;
+    font-size: 1.75em;
+    margin-left: 2.5vh;
+    margin-right: 5vh;
 }
 
-#leaf {
-    width: 47.5%;
-    height: 40vh;
-    object-fit: cover;
+.p3 {
+    color: #F0D0C9;
+    font-size: 1.75em;
 }
 
-#bag {
-    width: 47.5%;
-    height: 40vh;
-    object-fit: cover;
+.p4 {
+    color: #9B2828;
+    column-count: 3;
+    font-size: 1.75;
 }
 
-#waterfall {
-    width: 47.5%;
-    height: 40vh;
-    object-fit: cover;
+.sections2 {
+    padding: 2.5vh;
+    display: flex;
+    background-color: #F0D0C9;
+    margin: 60px 80px 0px 80px;
 }
 
-#cornicopia {
-    width: 47.5%;
-    height: 40vh;
-    object-fit: cover;
-}
-
+#map,
+#leaf,
+#bag,
+#waterfall,
+#cornicopia,
 #hourglass {
     width: 47.5%;
     height: 40vh;
     object-fit: cover;
+}
+
+#thanksgiving,
+#the-falls,
+#spoopy {
+    object-fit: cover;
+    width: 35vh;
+    height: 42.5vh;
+    align-self: center;
+}
+
+#winter-cabin,
+#city-lockdown,
+#grey-house,
+#daytime,
+#quebec,
+#vancouver {
+    object-fit: cover;
+    width: 52.5vh;
+    height: 45vh;
+}
+
+#cars,
+#bus,
+#bike {
+    
 }
 
 .headie {
@@ -262,7 +299,7 @@ section {
 #carouselsk-1:checked ~ .control-1,
 #carouselsk-2:checked ~ .control-2,
 #carouselsk-3:checked ~ .control-3,
-#carouselsk-4:checked ~ .control-4, {
+#carouselsk-4:checked ~ .control-4 {
     display: block;
 }
 
@@ -350,29 +387,44 @@ section {
 /*Destination Page*/
 .bigp {
     display: flex;
-    height: 600px;
     margin: 60px 80px 0px 80px;
     justify-content: space-between;
 }
 .polar {
     width: 30%;
     background-color: #F0D0C9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
 }
 .ptext {
     font-size: 80px;
     color: #B24040;
     text-align: center;
+    margin: 0px;
 }
 .pimgska {
-    width: 100%;
-    padding: 25px;
+    width: 90%;
+    margin: 25px;
 }
+
 .holid {
     height: 7px;
     color: #F1C3B8;
     background-color: #A34545;
+    width: 100%;
+    margin-top: 20px;
 }
 
+.deshe, .deshe:visited {
+    color: #B24040;
+    text-decoration: none;
+}
+
+.deshe:hover {
+    color: #9B2828;
+}
 
 /*Hero Images*/
 .hiro1 {
@@ -726,13 +778,13 @@ section {
     background-image: url(/tourism-img/southkorea-visit/Seoul-South-Korea-Subway-Train.jpg);
 }
 .textylov {
-    font-size: 17px;
+    font-size: 27px;
     color: #9B2828;
     padding: 40px;
     align-self: center;
     background-color: #F0D0C9;
     margin: 0px 0px 0px 0px;
-    column-count: 2;
+    column-count: 3;
     column-gap: 40px;
 }
 
@@ -786,6 +838,10 @@ ol {
     column-gap: 20px;
     padding: 0px 20px 0px 20px;
 }
+.rchd {
+    width: 30%;
+    padding: 0px 20px 0px 20px;
+}
 
 .ic {
     width: 25%;
@@ -809,15 +865,16 @@ ol {
 /* visit */
 .to {
     height: 45%;
-    background-color:#A34545 ;
+    background-color: #F1C3B8 ;
     padding: 10px 20px 10px 20px;
-    color: #F0D0C9;
+    color: #9B2828;
     font-size: 27px;
+    margin-top: 50px;
     
 }
 
 .to p {
-    column-count: 2;
+    column-count: 3;
     column-gap: 40px;
     margin: 30px;
 }
@@ -826,14 +883,10 @@ ol {
     width: 30%;
     height: 450px;
     margin-left: 45px;
+    margin-top: 40px;
 }
 
-.hend{
-    margin-left: 42%;
-    margin-top: 20px;
-}
-
-.carouselcn1, .carouselsk1 {
+.carouselcn1, .carouselsk1, .carouselca1 {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
@@ -841,31 +894,31 @@ ol {
     width: 30%;
 }
 
-.carouselcn1-inner, .carouselsk1-inner {
+.carouselcn1-inner, .carouselsk1-inner, .carouselca1-inner {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-.carouselcn1-open:checked + .carouselcn1-item, .carouselsk1-open:checked + .carouselsk1-item {
+.carouselcn1-open:checked + .carouselcn1-item, .carouselsk1-open:checked + .carouselsk1-item, .carouselca1-open:checked + .carouselca1-item {
     position: static;
     opacity: 100;
 }
 
-.carouselcn1-item, .carouselsk1-item {
+.carouselcn1-item, .carouselsk1-item, .carouselca1-item {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
 
-.carouselcn1-item img, .carouselsk1-item img {
+.carouselcn1-item img, .carouselsk1-item img, .carouselca1-item img {
     display: block;
     height: auto;
     max-width: 100%;
 }
 
-.carouselcn1-control, .carouselsk1-control {
+.carouselcn1-control, .carouselsk1-control, .carouselca1-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
     color: #fff;
@@ -885,15 +938,15 @@ ol {
     z-index: 10;
 }
 
-.carouselcn1-control.prev, .carouselsk1-control.prev {
+.carouselcn1-control.prev, .carouselsk1-control.prev, .carouselca1-control.prev {
     left: 2%;
 }
 
-.carouselcn1-control.next, .carouselsk1-control.next {
+.carouselcn1-control.next, .carouselsk1-control.next, .carouselca1-control.next {
     right: 2%;
 }
 
-.carouselcn1-control:hover, .carouselsk1-control:hover {
+.carouselcn1-control:hover, .carouselsk1-control:hover, .carouselca1-control:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
 }
@@ -909,11 +962,17 @@ ol {
 #carouselsk1-3:checked ~ .control-3,
 #carouselsk1-4:checked ~ .control-4,
 #carouselsk1-5:checked ~ .control-5,
-#carouselsk1-6:checked ~ .control-6 {
+#carouselsk1-6:checked ~ .control-6,
+#carouselca1-1:checked ~ .control-1,
+#carouselca1-2:checked ~ .control-2,
+#carouselca1-3:checked ~ .control-3,
+#carouselca1-4:checked ~ .control-4,
+#carouselca1-5:checked ~ .control-5,
+#carouselca1-6:checked ~ .control-6 {
     display: block;
 }
 
-.carouselcn1-indicators, .carouselsk1-indicators {
+.carouselcn1-indicators, .carouselsk1-indicators, .carouselca1-indicators {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -925,19 +984,19 @@ ol {
     z-index: 10;
 }
 
-.carouselcn1-indicators li, .carouselsk1-indicators li {
+.carouselcn1-indicators li, .carouselsk1-indicators li, .carouselca1-indicators li {
     display: inline-block;
     margin: 0 5px;
 }
 
-.carouselcn1-bullet, .carouselsk1-bullet {
+.carouselcn1-bullet, .carouselsk1-bullet, .carouselca1-bullet {
     color: #fff;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
 
-.carouselcn1-bullet:hover, .carouselsk1-bullet:hover {
+.carouselcn1-bullet:hover, .carouselsk1-bullet:hover, .carouselca1-bullet:hover {
     color: #aaaaaa;
 }
 
@@ -946,16 +1005,19 @@ ol {
 #carouselcn1-3:checked ~ .control-3 ~ .carouselcn1-indicators li:nth-child(3) .carouselcn1-bullet,
 #carouselcn1-4:checked ~ .control-4 ~ .carouselcn1-indicators li:nth-child(4) .carouselcn1-bullet,
 #carouselcn1-5:checked ~ .control-5 ~ .carouselcn1-indicators li:nth-child(5) .carouselcn1-bullet,
-#carouselcn1-6:checked ~ .control-6 ~ .carouselcn1-indicators li:nth-child(6) .carouselcn1-bullet {
-    color: #D2B6AF;
-}
-
+#carouselcn1-6:checked ~ .control-6 ~ .carouselcn1-indicators li:nth-child(6) .carouselcn1-bullet,
 #carouselsk1-1:checked ~ .control-1 ~ .carouselsk1-indicators li:nth-child(1) .carouselsk1-bullet,
 #carouselsk1-2:checked ~ .control-2 ~ .carouselsk1-indicators li:nth-child(2) .carouselsk1-bullet,
 #carouselsk1-3:checked ~ .control-3 ~ .carouselsk1-indicators li:nth-child(3) .carouselsk1-bullet,
 #carouselsk1-4:checked ~ .control-4 ~ .carouselsk1-indicators li:nth-child(4) .carouselsk1-bullet,
 #carouselsk1-5:checked ~ .control-5 ~ .carouselsk1-indicators li:nth-child(5) .carouselsk1-bullet,
-#carouselsk1-6:checked ~ .control-6 ~ .carouselsk1-indicators li:nth-child(6) .carouselsk1-bullet {
+#carouselsk1-6:checked ~ .control-6 ~ .carouselsk1-indicators li:nth-child(6) .carouselsk1-bullet,
+#carouselca1-1:checked ~ .control-1 ~ .carouselca1-indicators li:nth-child(1) .carouselca1-bullet,
+#carouselca1-2:checked ~ .control-2 ~ .carouselca1-indicators li:nth-child(2) .carouselca1-bullet,
+#carouselca1-3:checked ~ .control-3 ~ .carouselca1-indicators li:nth-child(3) .carouselca1-bullet,
+#carouselca1-4:checked ~ .control-4 ~ .carouselca1-indicators li:nth-child(4) .carouselca1-bullet,
+#carouselca1-5:checked ~ .control-5 ~ .carouselca1-indicators li:nth-child(5) .carouselca1-bullet,
+#carouselca1-6:checked ~ .control-6 ~ .carouselca1-indicators li:nth-child(6) .carouselca1-bullet {
     color: #D2B6AF;
 }
 
@@ -1026,7 +1088,7 @@ ol {
 .line{
     background-color: #A34545;
     height: 10px;
-    width: 91.6%;
+    width: 92.2%;
     margin-left: 80px;
 }
 
@@ -1081,19 +1143,20 @@ margin:  60px 80px 0px;
 
 
 
+/* icon */
+.icon{
+    width: 50%;
+}
 
 
+@media screen and (min-width: 480px) {
+    .hopa { flex-direction: column;
+}
 
-
-
-
-
-
-
-
-
-
-
-@media screen and (max) {
+@media screen and (min-width: 768px ) {
     
+}
+
+@media screen and (max-width: 992px ) {
+   
 }
