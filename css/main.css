@@ -1,21 +1,14 @@
 /* Don't forget that media queries are required for this project */
-body {
-    background-color: #F9F1F0;
-    margin: 0px;
-}
-
-.header {
-    background-color: #A34545;
-    text-align: center;
-    color: #ECB2A3;
-}
-
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: #F9F1F0;
+    margin: 0px;
+    color: #F0D0C9
+}
 
-/*fix the navbar drop-down*/
-
+/* nav bar */
 #nav1 {
     width: 100%;
     position: fixed;
@@ -82,18 +75,14 @@ nav ul ul li a, nav ul ul li a:visited {
     text-align: left;
 }
 
+/* logo */
 .logo {
     width: 12.5vh;
     height: 12.5vh;
     vertical-align: middle;
 }
 
-body {
-    margin: 0px;
-    background-color: #F9F1F0;
-    color: #F0D0C9;
-}
-
+/* flex */
 .flex-container {
 flex-direction: row;
 }
@@ -116,6 +105,12 @@ flex-direction: row;
     background-color: #A34545;
     margin-top: 60px;
     height: 175px;
+}
+
+.header {
+    background-color: #A34545;
+    text-align: center;
+    color: #ECB2A3;
 }
 
 .headie {
@@ -166,7 +161,6 @@ flex-direction: row;
     background-attachment: fixed;
     background-size: cover;
 }
-
 
 footer {
     background-color: #A34545;

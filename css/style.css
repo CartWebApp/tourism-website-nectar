@@ -1,0 +1,1027 @@
+/* Don't forget that media queries are required for this project */
+/*Navigation Bar*/
+#nav1 {
+    width: 100%;
+    position: fixed;
+    box-shadow: 2px 4px 8px rgb(31, 3, 3)   
+}
+
+nav ul {
+    padding: 0.5%;
+    margin: 0;
+    list-style-type: none;
+    background-color: #A34545;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 6vh;
+    font-size: 5vh;
+    text-align: center;
+    position: relative;
+}
+
+nav a, nav a:visited {
+    color: #F0D0C9;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 9.65vh;
+    box-shadow: 4px 2px 8px rgb(31, 3, 3)
+}
+
+nav a:hover {
+    background-color: #803434d0;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+    background-color: #d1b4ae7c;
+}
+
+nav ul ul li {
+    width: 20vh;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: #F0D0C9;
+    box-shadow: 4px 2px 8px rgb(31, 3, 3)
+}
+
+nav ul ul li a:hover {
+    background-color: #d1b4aec7;
+}
+
+nav ul ul li a, nav ul ul li a:visited {
+    color:#A34545;
+    font-size: 2.4em;
+    text-align: left;
+}
+
+/* Logo */
+.logo {
+    width: 12.5vh;
+    height: 12.5vh;
+    vertical-align: middle;
+}
+
+/*Body Format*/
+body {
+    background-color: #F9F1F0;
+    margin: 0px;
+    color: #F0D0C9
+}
+
+/*Heading*/
+.header {
+    background-color: #A34545;
+    text-align: center;
+    color: #ECB2A3;
+}
+
+.flex-container {
+    flex-direction: row;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    height: 7px;
+    color: #F1C3B8;
+    background-color: #F1C3B8;
+    width: 35%;
+    align-self: center;
+    margin: 0px 80px 0px 80px;
+}
+
+#header {
+    display: flex;
+    color: #ECB2A3;
+    font-size: 2.5em;
+    background-color: #A34545;
+    justify-content: space-around;
+}
+
+section {
+    background-color: #F0D0C9;
+    display: flex;
+    flex-direction: row;
+    margin: 10vh;
+}
+
+.p {
+    color: #9B2828;
+    font-size: 1.75em;
+    width: 47.5%;
+    margin: 5vh;
+}
+
+#map {
+    width: 47.5%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#leaf {
+    width: 47.5%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#bag {
+    width: 47.5%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#waterfall {
+    width: 47.5%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#cornicopia {
+    width: 47.5%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#hourglass {
+    width: 47.5%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.headie {
+    align-self: center;
+}
+
+.headie1 {
+    font-size: 80px;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+.dest {
+    height: 105px; 
+    font-size: 40px;
+    background-color: #A34545; 
+    text-align: center;
+    
+}
+.hopa {
+    display: flex;
+    font-size: 30px;
+    margin: 60px;
+    justify-content: space-between;
+ 
+}
+.csc{
+    background-color: #F0D0C9;
+    width: 30%;
+    text-align: center;
+    color: #B24040;
+    padding: 0px 20px 20px 20px;
+}
+
+/* Image Carousel for the Home Page*/
+.carouselsk, .carouselca, .carouselcn, .carouselsk1 {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.205);
+    margin-top: 26px;
+}
+
+.carousel-innersk, .carouselca-inner, .carouselcn-inner, .carouselsk1-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carouselsk-open:checked + .carouselsk-item, .carouselca-open:checked + .carouselca-item, .carouselcn-open:checked + .carouselcn-item, .carouselsk1-open:checked + .carouselsk1-item {
+    position: static;
+    opacity: 100;
+}
+
+.carouselsk-item, .carouselca-item, .carouselcn-item, .carouselsk1-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carouselsk-item img, .carouselca-item img, .carouselcn-item img, .carouselsk1-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carouselsk-control, .carouselca-control, .carouselcn-control, .carouselsk1-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carouselsk-control.prev, .carouselca-control.prev, .carouselcn-control.prev, .carouselsk1-control.prev {
+    left: 2%;
+}
+
+.carouselsk-control.next, .carouselca-control.next, .carouselcn-control.next, .carouselsk1-control.next {
+    right: 2%;
+}
+
+.carouselsk-control:hover, .carouselca-control:hover, .carouselcn-control:hover, .carouselsk1-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carouselsk-1:checked ~ .control-1,
+#carouselsk-2:checked ~ .control-2,
+#carouselsk-3:checked ~ .control-3,
+#carouselsk-4:checked ~ .control-4, {
+    display: block;
+}
+
+#carouselca-1:checked ~ .control-1,
+#carouselca-2:checked ~ .control-2,
+#carouselca-3:checked ~ .control-3,
+#carouselca-4:checked ~ .control-4 {
+    display: block;
+}
+
+#carouselcn-1:checked ~ .control-1,
+#carouselcn-2:checked ~ .control-2,
+#carouselcn-3:checked ~ .control-3,
+#carouselcn-4:checked ~ .control-4 {
+    display: block;
+}
+
+#carouselsk1-1:checked ~ .control-1,
+#carouselsk1-2:checked ~ .control-2,
+#carouselsk1-3:checked ~ .control-3,
+#carouselsk1-4:checked ~ .control-4,
+#carouselsk1-5:checked ~ .control-5,
+#carouselsk1-6:checked ~ .control-6 {
+    display: block;
+}
+
+.carouselsk-indicators, .carouselca-indicators, .carouselcn-indicators, .carouselsk1-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carouselsk-indicators li, .carouselca-indicators li, .carouselcn-indicators li, .carouselsk1-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carouselsk-bullet, .carouselca-bullet, .carouselcn-bullet, .carouselsk1-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carouselsk-bullet:hover, .carouselca-bullet:hover, .carouselcn-bullet:hover, .carouselsk1-bullet:hover, .carouselsk1-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carouselsk-1:checked ~ .control-1 ~ .carouselsk-indicators li:nth-child(1) .carouselsk-bullet,
+#carouselsk-2:checked ~ .control-2 ~ .carouselsk-indicators li:nth-child(2) .carouselsk-bullet,
+#carouselsk-3:checked ~ .control-3 ~ .carouselsk-indicators li:nth-child(3) .carouselsk-bullet,
+#carouselsk-4:checked ~ .control-4 ~ .carouselsk-indicators li:nth-child(4) .carouselsk-bullet {
+    color: #D2B6AF;
+}
+
+#carouselca-1:checked ~ .control-1 ~ .carouselca-indicators li:nth-child(1) .carouselca-bullet,
+#carouselca-2:checked ~ .control-2 ~ .carouselca-indicators li:nth-child(2) .carouselca-bullet,
+#carouselca-3:checked ~ .control-3 ~ .carouselca-indicators li:nth-child(3) .carouselca-bullet,
+#carouselca-4:checked ~ .control-4 ~ .carouselca-indicators li:nth-child(4) .carouselca-bullet {
+    color: #D2B6AF;
+}
+
+#carouselcn-1:checked ~ .control-1 ~ .carouselcn-indicators li:nth-child(1) .carouselcn-bullet,
+#carouselcn-2:checked ~ .control-2 ~ .carouselcn-indicators li:nth-child(2) .carouselcn-bullet,
+#carouselcn-3:checked ~ .control-3 ~ .carouselcn-indicators li:nth-child(3) .carouselcn-bullet,
+#carouselcn-4:checked ~ .control-4 ~ .carouselcn-indicators li:nth-child(4) .carouselcn-bullet {
+    color: #D2B6AF;
+}
+
+#carouselsk1-1:checked ~ .control-1 ~ .carouselsk1-indicators li:nth-child(1) .carouselsk1-bullet,
+#carouselsk1-2:checked ~ .control-2 ~ .carouselsk1-indicators li:nth-child(2) .carouselsk1-bullet,
+#carouselsk1-3:checked ~ .control-3 ~ .carouselsk1-indicators li:nth-child(3) .carouselsk1-bullet,
+#carouselsk1-4:checked ~ .control-4 ~ .carouselsk1-indicators li:nth-child(4) .carouselsk1-bullet,
+#carouselsk1-5:checked ~ .control-5 ~ .carouselsk1-indicators li:nth-child(5) .carouselsk1-bullet,
+#carouselsk1-6:checked ~ .control-6 ~ .carouselsk1-indicators li:nth-child(6) .carouselsk1-bullet {
+    color: #D2B6AF;
+}
+
+/*Hero Images*/
+.hiro1 {
+    height: 80vh;
+    display: flex;
+    background-position: 50% 90%;
+    background-image: url(../tourism-img/home-page/A-Man-Sitting-Outside-of-the-Famous-Petra.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro2 {
+    height: 50vh;
+    display: flex;
+    background-position: 50% 90%;
+    background-image: url(../tourism-img/destination-page/Three-Men-Standing-Near-Waterfalls.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro3 {
+    height: 50vh;
+    display: flex;
+    background-position: bottom;
+    background-image: url(../tourism-img/southkorea-about/Brown-Bare-Trees-Under-Blue-Sky-During-Daytime-Photo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro4 {
+    height: 50vh;
+    display: flex;
+    background-position: 0% 75%;
+    background-image: url(../tourism-img/southkorea-dis/Pink-Petaled-Flowers-On-Roof-Shingles-Photo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro5 {
+    height: 50vh;
+    display: flex;
+    background-position: bottom;
+    background-image: url(../tourism-img/southkorea-visit/City-Under-Cloudy-Sky-Photo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro6 {
+    height: 50vh;
+    display: flex;
+    background-position: 0% 100%;
+    background-image: url(../tourism-img/china-about/Top-Angle-Photography-Of-Cup-Photo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro7 {
+    height: 50vh;
+    display: flex;
+    background-position: 0% 75%;
+    background-image: url(../tourism-img/china-dis/Photo-Of-River-Near-Mountains-Covered-With-Trees.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro8 {
+    height: 50vh;
+    display: flex;
+    background-position: 0% 120%;
+    background-image: url(../tourism-img/china-visit/Sunset-China-Pagoda-Lotus.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro9 {
+    height: 50vh;
+    display: flex;
+    background-position: 0% 75%;
+    background-image: url(../tourism-img/canada-about/Cn-Tower-in-Toronto-Canada-at-Night.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro10 {
+    height: 50vh;
+    display: flex;
+    background-position: 0% 75%;
+    background-image: url(../tourism-img/canada-dis/Grey-Dome-Building-Beside-Body-Of-Water-During-Sunset.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hiro11 {
+    height: 50vh;
+    display: flex;
+    background-position: 0% 75%;
+    background-image: url(../tourism-img/canada-visit/Birds-Eye-View-Of-City-During-Sunset.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Heading Format for Article Contents*/
+.linej {
+    height: 7px;
+    color: #F1C3B8;
+    background-color: #F1C3B8;
+    width: 35%;
+    align-self: center;
+    margin: 0px 80px 0px 80px;
+}
+
+.pos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: #A34545;
+    margin-top: 80px;
+    
+}
+
+.headie {
+    align-self: center;
+}
+
+.headiej {
+    font-size: 60px;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+/*Format for the Article Contents*/
+.contents {
+    display: flex;
+    background-color: #F0D0C9;
+    margin: 60px 80px 0px 80px;
+    height: 45vh;
+}
+
+.text {
+    font-size: 17px;
+    color: #9B2828;
+    width: 50%;
+    padding: 40px;
+    align-self: center;
+}
+
+.textie {
+    margin: 0px;
+    font-family: Georgia;
+    line-height: 1.6;
+    text-indent: 50px;
+}
+
+.textie1 {
+    margin: 0px;
+    font-family: Cambria;
+}
+
+.image {
+    width: 100%;
+}
+
+.holi {
+    height: 7px;
+    color: #F1C3B8;
+    background-color: #A34545;
+    margin: 0px 80px 0px 80px;
+}
+
+/*South Korea About Page*/
+/*Locations Section*/
+.imglo {
+    width: 50%;
+    background-image: url(/tourism-img/southkorea-about/Car-Passing-Through-Road-Beside-Building-Photo.jpg);
+    background-size: 100%;
+    background-position: 0% 90%;
+}
+/*Demographics and major Cities Section*/
+.imgdmc {
+    width: 50%;
+    background-image: url(/tourism-img/southkorea-about/People-Walking-On-Street-During-Daytime-Photo.jpg);
+    background-size: 150%;
+    background-position: 0% 80%;
+}
+/*Exports Section*/
+.imgex {
+    width: 50%;
+    background-image: url(/tourism-img/southkorea-about/Assorted-Clothes-Inside-Room-Photo.jpg);
+    background-size: 120%;
+    background-position: 0% 75%;
+}
+/*Natural Locations Section*/
+.imgnl {
+    width: 50%;
+    background-image: url(/tourism-img/southkorea-about/Brown-And-Red-Trees-During-Daytime-Photo.jpg);
+    background-size: 100%;
+    background-position: 50% 75%;
+}
+/*Cultural Overview Section*/
+.imgco {
+    width: 50%;
+    background-image: url(/tourism-img/southkorea-about/Free-Seoul.jpg);
+    background-size: 100%;
+    background-position: 50% 80%;
+}
+
+/*Brief History Section*/
+.imgbh {
+    width: 50%;
+    background-image: url(/tourism-img/southkorea-about/South-Korea-Palace-Traditional.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+/*South Korea Discover Page*/
+.sections {
+    display: flex;
+    background-color: #F0D0C9;
+    margin: 60px 80px 0px 80px;
+}
+
+.sec {
+    margin: 80px 160px 0px 160px;
+}
+
+.pic {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px 40px 40px;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.imgtc {
+    height: 50%;
+}
+
+.imgtc1 {
+    width: 100%;
+    background-image: url(/tourism-img/southkorea-dis/Tiger-Dragon-Summer.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 47%;
+    margin-bottom: 20px;
+}
+
+.imgtc2 {
+    width: 100%;
+    background-image: url(/tourism-img/southkorea-dis/Decorative-Street-Lamps-Under-Bright-Cloudy-Sky-At-Sunset.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 51%;
+}
+
+.art {
+    background-color: #F0D0C9;
+}
+
+.texty {
+    font-size: 17px;
+    color: #9B2828;
+    width: 70%;
+    padding: 40px 40px 40px 20px;
+}
+
+.texty1 {
+    margin: 0px;
+    font-family: Georgia;
+    line-height: 1.6;
+    text-indent: 50px;
+}
+
+.veli {
+    width: 7px;
+    color: #F1C3B8;
+    background-color: #A34545;
+}
+
+.imgtc3 {
+    width: 100%;
+    background-image: url(/tourism-img/southkorea-dis/Black-Bean-Noodle.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+/*South Korea Visit Page*/
+.lo {
+    margin: 60px 80px 0px 80px;
+    display: flex;
+    background-color: #F0D0C9;
+
+}
+
+.textylo {
+    font-size: 17px;
+    color: #9B2828;
+    width: 70%;
+    padding: 40px 40px 40px 20px;
+    align-self: center;
+}
+
+.hendj{
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.toj {
+    height: 45%;
+    background-color:#A34545 ;
+    color: #F0D0C9;
+    font-size: 27px;
+    padding: 40px;
+    margin: 80px 0px 0px 0px;
+
+}
+
+.tej {
+    column-count: 2;
+    column-gap: 60px;
+}
+/*Visit Page Images*/
+.trav {
+    margin: 60px 80px 0px 80px;
+}
+.imgv {
+    display: flex;
+    background-color: #F0D0C9;
+    padding: 40px 40px 0px 40px;
+    justify-content: space-between;
+}
+.skvis1 {
+    height: 30vh;
+    background-size: 100%;
+    background-image: url(/tourism-img/southkorea-visit/People-Walking-On-Pedestrian-Lane-During-Daytime-Photo.jpg);
+    width: 30%;
+}
+.skvis2 {
+    background-image: url(/tourism-img/southkorea-visit/Vehicle-On-Gray-Concrete-Road-Taken-At-Daytime-Photo.jpg);
+    height: 30vh;
+    background-size: 100%;
+    width: 30%;
+}
+.skvis3 {
+    height: 30vh;
+    width: 30%;
+    background-size: 100%;
+    background-image: url(/tourism-img/southkorea-visit/Seoul-South-Korea-Subway-Train.jpg);
+}
+.textylov {
+    font-size: 17px;
+    color: #9B2828;
+    padding: 40px;
+    align-self: center;
+    background-color: #F0D0C9;
+    margin: 0px 0px 0px 0px;
+    column-count: 2;
+    column-gap: 40px;
+}
+
+/*Sup for Citing Work*/
+sup {
+    color: #9B2828;
+}
+
+sup:visited {
+    color: #9B2828;
+}
+
+/*Footer*/
+footer {
+    background-color: #A34545;
+    margin-top: 80px;
+}
+ol {
+    margin: 0px;
+}
+
+.ft {
+    margin: 80px 0px 20px 0px;
+    padding: 20px 0px 0px 10px;
+    font-size: 30px;
+}
+
+.olft {
+    margin: 0px 80px 0px 0px;
+    padding-bottom: 20px;
+}
+
+.suplink, .suplink:visited {
+    color: #9B2828;
+}
+
+.flio {
+    color: #F0D0C9;
+}
+
+/* China */
+/* img classes */
+
+.sde {
+    width: 50%;
+    height: 720px;
+}
+
+/* visit */
+.to {
+    height: 45%;
+    background-color:#A34545 ;
+    padding: 10px 20px 10px 20px;
+    color: #F0D0C9;
+    font-size: 27px;
+    
+}
+
+.to p {
+    column-count: 2;
+    column-gap: 40px;
+    margin: 30px;
+}
+
+.trans {
+    width: 30%;
+    height: 450px;
+    margin-left: 45px;
+}
+
+.hend{
+    margin-left: 42%;
+    margin-top: 20px;
+}
+
+.carouselcn1, .carouselsk1 {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+    margin: 40px 20px 40px 40px;
+    width: 30%;
+}
+
+.carouselcn1-inner, .carouselsk1-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carouselcn1-open:checked + .carouselcn1-item, .carouselsk1-open:checked + .carouselsk1-item {
+    position: static;
+    opacity: 100;
+}
+
+.carouselcn1-item, .carouselsk1-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carouselcn1-item img, .carouselsk1-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carouselcn1-control, .carouselsk1-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carouselcn1-control.prev, .carouselsk1-control.prev {
+    left: 2%;
+}
+
+.carouselcn1-control.next, .carouselsk1-control.next {
+    right: 2%;
+}
+
+.carouselcn1-control:hover, .carouselsk1-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carouselcn1-1:checked ~ .control-1,
+#carouselcn1-2:checked ~ .control-2,
+#carouselcn1-3:checked ~ .control-3,
+#carouselcn1-4:checked ~ .control-4,
+#carouselcn1-5:checked ~ .control-5,
+#carouselcn1-6:checked ~ .control-6,
+#carouselsk1-1:checked ~ .control-1,
+#carouselsk1-2:checked ~ .control-2,
+#carouselsk1-3:checked ~ .control-3,
+#carouselsk1-4:checked ~ .control-4,
+#carouselsk1-5:checked ~ .control-5,
+#carouselsk1-6:checked ~ .control-6 {
+    display: block;
+}
+
+.carouselcn1-indicators, .carouselsk1-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carouselcn1-indicators li, .carouselsk1-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carouselcn1-bullet, .carouselsk1-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carouselcn1-bullet:hover, .carouselsk1-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carouselcn1-1:checked ~ .control-1 ~ .carouselcn1-indicators li:nth-child(1) .carouselcn1-bullet,
+#carouselcn1-2:checked ~ .control-2 ~ .carouselcn1-indicators li:nth-child(2) .carouselcn1-bullet,
+#carouselcn1-3:checked ~ .control-3 ~ .carouselcn1-indicators li:nth-child(3) .carouselcn1-bullet,
+#carouselcn1-4:checked ~ .control-4 ~ .carouselcn1-indicators li:nth-child(4) .carouselcn1-bullet,
+#carouselcn1-5:checked ~ .control-5 ~ .carouselcn1-indicators li:nth-child(5) .carouselcn1-bullet,
+#carouselcn1-6:checked ~ .control-6 ~ .carouselcn1-indicators li:nth-child(6) .carouselcn1-bullet {
+    color: #D2B6AF;
+}
+
+#carouselsk1-1:checked ~ .control-1 ~ .carouselsk1-indicators li:nth-child(1) .carouselsk1-bullet,
+#carouselsk1-2:checked ~ .control-2 ~ .carouselsk1-indicators li:nth-child(2) .carouselsk1-bullet,
+#carouselsk1-3:checked ~ .control-3 ~ .carouselsk1-indicators li:nth-child(3) .carouselsk1-bullet,
+#carouselsk1-4:checked ~ .control-4 ~ .carouselsk1-indicators li:nth-child(4) .carouselsk1-bullet,
+#carouselsk1-5:checked ~ .control-5 ~ .carouselsk1-indicators li:nth-child(5) .carouselsk1-bullet,
+#carouselsk1-6:checked ~ .control-6 ~ .carouselsk1-indicators li:nth-child(6) .carouselsk1-bullet {
+    color: #D2B6AF;
+}
+
+/* discover */
+.dis{
+    height: 700px;
+    background-color: #F0D0C9;
+    width: 50%;
+    color: #A34545;
+padding: 50px;
+font-size: 1.6em;
+}
+
+
+.whle{
+ display: flex;
+ align-content: space-between;
+ margin: 30px;
+}
+
+.hl{
+    background-color: #A34545;
+    width: 7px;
+
+}
+
+.dn{
+    width: 50%;
+    height: 800px;
+}
+
+.ho{
+    display: flex;
+    align-content: space-between;
+    margin: 30px;
+}
+
+.hop{
+    width: 50%;
+    height: 1200px;
+}
+
+.hope{
+    height: 1100px;
+    background-color: #F0D0C9;
+    width: 50%;
+    color: #A34545;
+padding: 50px;
+font-size: 1.6em;
+}
+
+
+/* abt */
+.lin {
+  height: 100px;
+  background-color: #A34545;
+}
+
+.adv{
+    color:#B24040; 
+    background: #F0D0C9; 
+    width: 50%;
+    height: 600px;
+    font-size: 2em;
+    padding: 60px;
+}
+
+.line{
+    background-color: #A34545;
+    height: 10px;
+    width: 91.6%;
+    margin-left: 80px;
+}
+
+.whl {
+    display: flex;
+  margin:  60px 80px 0px;
+}
+/* headings abt */
+.hed {
+    display: flex;
+    background-color: #A34545;
+    height: 175px;
+    align-items: center;
+    margin: 30px 0px 30px 0px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.lne{
+
+    background: #F0D0C9; 
+    width: 35%;
+   height: 10px;
+}
+
+.fce{
+    font-size: 40px;
+}
+
+/* last 4 abt */
+.bgg{
+    color:#B24040; 
+    background: #F0D0C9; 
+    width: 50%;
+    height: 800px;
+    font-size: 2em;
+    padding: 60px;
+}
+
+/* parent */
+.bg{
+display: flex;
+margin:  60px 80px 0px;
+}
+
+/* img */
+.bge{
+    width: 50%;
+    height: 920px;
+}

@@ -309,7 +309,7 @@ footer {
 
 
 /*Image Carousel*/
-.carousel {
+.carouselsk {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
@@ -317,31 +317,31 @@ footer {
     width: 30%;
 }
 
-.carousel-inner {
+.carouselsk-inner {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-.carousel-open:checked + .carousel-item {
+.carouselsk-open:checked + .carouselsk-item {
     position: static;
     opacity: 100;
 }
 
-.carousel-item {
+.carouselsk-item {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
 
-.carousel-item img {
+.carouselsk-item img {
     display: block;
     height: auto;
     max-width: 100%;
 }
 
-.carousel-control {
+.carouselsk-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
     color: #fff;
@@ -361,29 +361,29 @@ footer {
     z-index: 10;
 }
 
-.carousel-control.prev {
+.carouselsk-control.prev {
     left: 2%;
 }
 
-.carousel-control.next {
+.carouselsk-control.next {
     right: 2%;
 }
 
-.carousel-control:hover {
+.carouselsk-control:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
 }
 
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3,
-#carousel-4:checked ~ .control-4,
-#carousel-5:checked ~ .control-5,
-#carousel-6:checked ~ .control-6 {
+#carouselsk-1:checked ~ .control-1,
+#carouselsk-2:checked ~ .control-2,
+#carouselsk-3:checked ~ .control-3,
+#carouselsk-4:checked ~ .control-4,
+#carouselsk-5:checked ~ .control-5,
+#carouselsk-6:checked ~ .control-6 {
     display: block;
 }
 
-.carousel-indicators {
+.carouselsk-indicators {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -395,27 +395,27 @@ footer {
     z-index: 10;
 }
 
-.carousel-indicators li {
+.carouselsk-indicators li {
     display: inline-block;
     margin: 0 5px;
 }
 
-.carousel-bullet {
+.carouselsk-bullet {
     color: #fff;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
 
-.carousel-bullet:hover {
+.carouselsk-bullet:hover {
     color: #aaaaaa;
 }
 
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
-#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
-#carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet {
+#carouselsk-1:checked ~ .control-1 ~ .carouselsk-indicators li:nth-child(1) .carouselsk-bullet,
+#carouselsk-2:checked ~ .control-2 ~ .carouselsk-indicators li:nth-child(2) .carouselsk-bullet,
+#carouselsk-3:checked ~ .control-3 ~ .carouselsk-indicators li:nth-child(3) .carouselsk-bullet,
+#carouselsk-4:checked ~ .control-4 ~ .carouselsk-indicators li:nth-child(4) .carouselsk-bullet,
+#carouselsk-5:checked ~ .control-5 ~ .carouselsk-indicators li:nth-child(5) .carouselsk-bullet,
+#carouselsk-6:checked ~ .control-6 ~ .carouselsk-indicators li:nth-child(6) .carouselsk-bullet {
     color: #D2B6AF;
 }
