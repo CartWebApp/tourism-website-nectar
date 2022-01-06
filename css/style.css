@@ -206,14 +206,14 @@ body {
     width: 47.5%;
     height: 40vh;
     object-fit: cover;
+
 }
 
 #thanksgiving,
-#the-falls,
-#spoopy {
+#the-falls {
     object-fit: cover;
     width: 35vh;
-    height: 42.5vh;
+    height: 47.5vh;
     align-self: center;
 }
 
@@ -624,12 +624,12 @@ body {
     width: 100%;
 }
 
-.holi {
+holi {
     height: 7px;
     color: #F1C3B8;
     background-color: #A34545;
     margin: 0px 80px 0px 80px;
-}
+} 
 
 /*South Korea About Page*/
 /*Locations Section*/
@@ -691,7 +691,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 40px 20px 40px 40px;
-    width: 30%;
+    width: 150%;
     justify-content: space-between;
 }
 
@@ -723,7 +723,6 @@ body {
 .texty {
     font-size: 17px;
     color: #9B2828;
-    width: 70%;
     padding: 40px 40px 40px 20px;
 }
 
@@ -1068,21 +1067,27 @@ ol {
 }
 
 /* discover */
+
+.whle{
+ display: flex;
+ align-content: space-between;
+ margin: 30px;
+ height: 75%;
+}
 .dis{
-    height: 700px;
+    
     background-color: #F0D0C9;
     width: 50%;
     color: #A34545;
     padding: 50px;
     font-size: 1.6em;
 }
-
-
-.whle{
- display: flex;
- align-content: space-between;
- margin: 30px;
+.dn{
+    width:50%
+  
 }
+
+
 
 .hl{
     background-color: #A34545;
@@ -1090,30 +1095,7 @@ ol {
 
 }
 
-.dn{
-    width: 50%;
-    height: 800px;
-}
 
-.ho{
-    display: flex;
-    align-content: space-between;
-    margin: 30px;
-}
-
-.hop{
-    width: 50%;
-    height: 1200px;
-}
-
-.hope{
-    height: 1100px;
-    background-color: #F0D0C9;
-    width: 50%;
-    color: #A34545;
-    padding: 50px;
-    font-size: 1.6em;
-}
 
 
 /* abt */
@@ -1186,55 +1168,95 @@ margin:  60px 80px 0px;
     height: 920px;
 }
 
-
-
-
 /* icon */
 .icon{
     width: 50%;
 }
 
 
-
-/* 
 /* tablet */
-/* @media screen (min-width: 768px) and  (max-width: 992px){ */
-    /* For Home Page
+@media screen and (min-width: 481px) and  (max-width: 992px){
+    /*For Home Page*/
     .hopa {
         display: flex;
         flex-direction: column;
     }
-
 
     .csc {
         width: 95%;
         align-self: center;
         margin-bottom: 60px;
     }
-
     
     /* destinations */
-    /* .bigp {
+    .bigp {
         display: flex;
         flex-direction: column; 
     }
-    
+
     .polar {
         width: 90%;
         margin-bottom: 40px;
         align-self: center;
-
+    }
 
     .pimgska {
     margin-left: 5px;
     }
-} */
 
+    /* footer */
+    .foot {
+        display: flex;
+        flex-direction: column;
+    }
+    .ic {
+        width: 100%;
+    }
+    .rc {
+        column-count: 1;
+        width: 100%;
+    }
+
+    .hope {
+        
+    }
+
+    .sections {
+        display: flex;
+        flex-direction: column;
+    }
+    .texty {
+        padding: 40px;
+    }
+    .pic {
+        height: 80vh;
+        width: 85%;
+        align-self: center;
+        margin: 40px 40px 0px 40px;
+    }
+    .imgtc {
+        height: 50%;
+    }
+
+.whle{
+    display: flex;
+    flex-direction: column;
+}
+
+.dn {
+   width: 100%;
+}
+
+.dis {
+    width: 100%;
+}
+
+}
 
 /* phone */
-/* @media screen and (min-width: 480px) { */
+@media screen and (min-width: 480px) { 
     /*For Home Page*/
-    /* .hopa { 
+    .hopa { 
         display: flex;
         flex-direction: column;
     }
@@ -1242,26 +1264,40 @@ margin:  60px 80px 0px;
     .csc {
         width: 90%;
         margin-bottom: 40px;
-    }
-
-   
+    }  
 
     .ic, .olft, .info {
         width: 90%;
     }
 
-    destinations
+    /* destinations */
     .bigp {
         display: flex;
         flex-direction: column; 
-    /
+    }
     
     .polar {
         width: 90%;
         margin-bottom: 40px;
         align-self: center;
     }
- }  */
- 
 
+    .pic {
+        height: 35vh;
+    }
 
+    .whle{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dn {
+        width: 100%;
+     }
+
+     .dis{
+         width: 40%;
+     }
+     
+    
+}  
