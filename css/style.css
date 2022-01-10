@@ -435,14 +435,16 @@ body {
     align-content: space-between;
 }
 .ptext {
-    font-size: 80px;
     color: #B24040;
     text-align: center;
     margin: 0px;
 }
 .pimgska {
+    width: 100%;
+}
+.pimg {
     width: 90%;
-    margin: 25px;
+    padding: 25px;
 }
 
 .holid {
@@ -451,6 +453,10 @@ body {
     background-color: #A34545;
     width: 100%;
     margin-top: 20px;
+}
+
+.deshe {
+    font-size: 80px;
 }
 
 .deshe, .deshe:visited {
@@ -576,7 +582,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: space-around;
     background-color: #A34545;
     margin-top: 80px;
     
@@ -1175,7 +1180,7 @@ margin:  60px 80px 0px;
 
 
 /* tablet */
-@media screen and (min-width: 481px) and  (max-width: 992px){
+@media screen and  (max-width: 992px){
     /*For Home Page*/
     .hopa {
         display: flex;
@@ -1201,7 +1206,25 @@ margin:  60px 80px 0px;
     }
 
     .pimgska {
-    margin-left: 5px;
+        margin: 0%;
+    }
+    
+    .pimg {
+        align-self: center;
+        padding: 35px 25px 35px 25px;
+    }
+
+    .headie1 {
+        font-size: 70px;
+        margin: 40px 0px;
+    }
+
+    .deshe {
+        font-size: 70px;
+    }
+
+    .linej {
+        margin: 0px 40px;
     }
 
     /* footer */
@@ -1294,6 +1317,23 @@ margin:  60px 80px 0px;
      .dis{
          width: 40%;
      }
+
+     .pimg {
+        align-self: center;
+        padding: 17px 25px 20px 25px;
+    }
      
+    .headie1 {
+        margin: 60px 0px;
+        font-size: 50px;
+    }
+
+    .linej {
+        margin: 0px 25px;
+    }
+
+    .deshe {
+        font-size: 50px;
+    }
     
 }  
