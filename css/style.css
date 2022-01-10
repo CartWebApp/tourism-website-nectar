@@ -509,16 +509,17 @@ body {
     height: 50vh;
     display: flex;
     background-position: bottom;
-    background-image: url(../tourism-img/southkorea-visit/City-Under-Cloudy-Sky-Photo.jpg);
+    background-image: url(../tourism-img/southkorea-visit/City-Under-Cloudy-Sky-Photo.png);
     background-attachment: fixed;
     background-size: cover;
 }
 
 .hiro6 {
     height: 50vh;
+    width: 100%;
     display: flex;
     background-position: 0% 100%;
-    background-image: url(../tourism-img/china-about/Top-Angle-Photography-Of-Cup-Photo.jpg);
+    background-image: url(../tourism-img/china-about/Top-Angle-Photography-Of-Cup-Photo.png);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -527,7 +528,7 @@ body {
     height: 50vh;
     display: flex;
     background-position: 0% 75%;
-    background-image: url(../tourism-img/china-dis/Photo-Of-River-Near-Mountains-Covered-With-Trees.jpg);
+    background-image: url(../tourism-img/china-dis/Photo-Of-River-Near-Mountains-Covered-With-Trees.png);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -536,7 +537,7 @@ body {
     height: 50vh;
     display: flex;
     background-position: 0% 120%;
-    background-image: url(../tourism-img/china-visit/Sunset-China-Pagoda-Lotus.jpg);
+    background-image: url(../tourism-img/china-visit/Sunset-China-Pagoda-Lotus.png);
     background-attachment: fixed;
     background-size: cover;
 }
