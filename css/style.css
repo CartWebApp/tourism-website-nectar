@@ -455,6 +455,13 @@ body {
     margin-top: 20px;
 }
 
+.holis {
+    height: 7px;
+    color: #F1C3B8;
+    background-color: #A34545;
+    margin: 0px 80px;
+}
+
 .deshe {
     font-size: 80px;
 }
@@ -509,7 +516,7 @@ body {
     height: 50vh;
     display: flex;
     background-position: bottom;
-    background-image: url(../tourism-img/southkorea-visit/City-Under-Cloudy-Sky-Photo.png);
+    background-image: url(../tourism-img/southkorea-visit/City-Under-Cloudy-Sky-Photo.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -599,7 +606,7 @@ body {
 }
 
 /*Format for the Article Contents*/
-.contents {
+.contentslo, .contentsdmc, .contentsex, .contentsnl, .contentsco, .contentsbh {
     display: flex;
     background-color: #F0D0C9;
     margin: 60px 80px 0px 80px;
@@ -697,7 +704,7 @@ holi {
     display: flex;
     flex-direction: column;
     margin: 40px 20px 40px 40px;
-    width: 150%;
+    width: 50%;
     justify-content: space-between;
 }
 
@@ -730,6 +737,7 @@ holi {
     font-size: 17px;
     color: #9B2828;
     padding: 40px 40px 40px 20px;
+    width: 45%;
 }
 
 .texty1 {
@@ -739,10 +747,11 @@ holi {
     text-indent: 50px;
 }
 
+
 .veli {
     width: 7px;
-    color: #F1C3B8;
     background-color: #A34545;
+    margin: 0px;
 }
 
 .imgtc3 {
@@ -751,7 +760,6 @@ holi {
     background-size: 100%;
     background-position: center;
     height: 100%;
-    margin-bottom: 20px;
 }
 
 /*South Korea Visit Page*/
@@ -789,6 +797,7 @@ holi {
 .tej {
     column-count: 2;
     column-gap: 60px;
+    text-indent: 50px;
 }
 /*Visit Page Images*/
 .trav {
@@ -1224,6 +1233,50 @@ margin:  60px 80px 0px;
         font-size: 70px;
     }
 
+    /* South Korea */
+    .contentslo, .contentsdmc, .contentsex, .contentsnl, .contentsco, .contentsbh {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .text {
+        width: 100%;
+        padding: 0px
+        ;
+    }
+
+    .textie {
+        padding: 40px;
+    }
+
+    .imglo, .imgdmc, .imgex, .imgnl, .imgco, .imgbh {
+        height: 100%;
+        width: 100%;
+    }
+
+    .texty {
+        width: 90%;
+    }
+
+    .carouselsk1 {
+        width: 75%;
+        align-self: center;
+        margin: 40px 0px 0px 0px;
+    }
+
+    .lo {
+        flex-direction: column;   
+    }
+
+    .textylo {
+        width: 80%;
+        padding: 30px 0px;
+    }
+
+    .skvis3, .skvis2, .skvis1 {
+        height: 15vh;
+    }
+
     .linej {
         margin: 0px 40px;
     }
@@ -1336,5 +1389,55 @@ margin:  60px 80px 0px;
     .deshe {
         font-size: 50px;
     }
+
+    /* South Korea */
+
+    .contentslo, .contentsex {
+        height: 100vh;
+    }
+
+    .contentsdmc {
+        height: 125vh;
+    }
+
+    .contentsnl {
+        height: 200vh;
+    }
+
+    .contentsco {
+        height: 175vh;
+    }
     
+    .contentsbh {
+        height: 205vh;
+    }
+
+    .texty {
+        width: 80%;
+        padding: 25px;
+        align-self: center;
+    }
+
+    .pic {
+        margin: 25px 20px 0px 20px;
+    }
+
+    .tej {
+        column-count: 1;
+    }
+
+    .imgv {
+        flex-direction: column;
+    }
+
+    .skvis1, .skvis2, .skvis3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .textyluv {
+        column-count: 1;
+        padding: 35px;
+    }
+
 }  
