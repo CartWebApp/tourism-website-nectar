@@ -917,14 +917,11 @@ ol {
 /* China */
 /* img classes */
 
-.sde {
-    width: 50%;
-    height: 720px;
-}
+
 
 /* visit */
 .to {
-    height: 45%;
+    /* height: 45%; */
     background-color: #F1C3B8 ;
     padding: 10px 20px 10px 20px;
     color: #9B2828;
@@ -1087,27 +1084,22 @@ ol {
  display: flex;
  align-content: space-between;
  margin: 30px;
- height: 75%;
+ 
 }
 .dis{
     
     background-color: #F0D0C9;
-    width: 50%;
     color: #A34545;
     padding: 50px;
     font-size: 1.6em;
 }
-.dn{
-    width:50%
-  
-}
+
 
 
 
 .hl{
     background-color: #A34545;
     width: 7px;
-
 }
 
 
@@ -1122,8 +1114,6 @@ ol {
 .adv{
     color:#B24040; 
     background: #F0D0C9; 
-    width: 50%;
-    height: 600px;
     font-size: 2em;
     padding: 60px;
 }
@@ -1165,8 +1155,6 @@ ol {
 .bgg{
     color:#B24040; 
     background: #F0D0C9; 
-    width: 50%;
-    height: 800px;
     font-size: 2em;
     padding: 60px;
 }
@@ -1178,9 +1166,9 @@ margin:  60px 80px 0px;
 }
 
 /* img */
+/*  */
 .bge{
-    width: 50%;
-    height: 920px;
+ height: 920px;
 }
 
 /* icon */
@@ -1190,7 +1178,7 @@ margin:  60px 80px 0px;
 
 
 /* tablet */
-@media screen and  (max-width: 992px){
+@media screen and (max-width: 992px){
     /*For Home Page*/
     .hopa {
         display: flex;
@@ -1311,18 +1299,49 @@ margin:  60px 80px 0px;
         height: 50%;
     }
 
-.whle{
-    display: flex;
-    flex-direction: column;
-}
+    /* china */
+    .whle{
+        display: flex;
+        flex-direction: column;
+    }
 
-.dn {
-   width: 100%;
-}
+    .whl{ display: flex;
+        flex-direction: column;
 
-.dis {
-    width: 100%;
-}
+    }
+
+    .bg{ display: flex;
+        flex-direction: column;
+
+    }
+
+    .line {
+        width: 80%;
+    }
+
+    .lin {
+        width: 80%;
+    }
+
+    .to{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .to p {
+        column-count: 1;
+        column-gap: 40px;
+        margin: 30px;
+    }
+
+    .trans{
+        width: 90%;
+    }
+
+    .carouselcn1, .carouselsk1, .carouselca1 {
+        width:90%;
+    }
 
 }
 
@@ -1364,13 +1383,7 @@ margin:  60px 80px 0px;
         flex-direction: column;
     }
 
-    .dn {
-        width: 100%;
-     }
-
-     .dis{
-         width: 40%;
-     }
+    
 
      .pimg {
         align-self: center;
@@ -1440,4 +1453,5 @@ margin:  60px 80px 0px;
         padding: 35px;
     }
 
+    
 }  
