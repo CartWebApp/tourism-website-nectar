@@ -1106,9 +1106,13 @@ ol {
 
 
 /* abt */
-.lin {
-  height: 100px;
-  background-color: #A34545;
+
+/* images div */
+
+.whl {
+    display: flex;
+  margin:  60px 80px 0px;
+
 }
 
 .adv{
@@ -1116,19 +1120,33 @@ ol {
     background: #F0D0C9; 
     font-size: 2em;
     padding: 60px;
+    width: 50%;
+}
+
+
+
+.sde {
+    width: 50%;
 }
 
 .line{
     background-color: #A34545;
     height: 10px;
-    width: 92.2%;
-    margin-left: 80px;
+ margin: 0px 80px;
 }
 
-.whl {
-    display: flex;
-  margin:  60px 80px 0px;
+.lne{
+
+    background: #F0D0C9; 
+    width: 35%;
+   height: 10px;
 }
+
+.lin {
+  height: 100px;
+  background-color: #A34545;
+}
+
 /* headings abt */
 .hed {
     display: flex;
@@ -1140,35 +1158,34 @@ ol {
     justify-content: space-around;
 }
 
-.lne{
 
-    background: #F0D0C9; 
-    width: 35%;
-   height: 10px;
-}
 
 .fce{
     font-size: 40px;
 }
 
 /* last 4 abt */
-.bgg{
-    color:#B24040; 
-    background: #F0D0C9; 
-    font-size: 2em;
-    padding: 60px;
-}
+
 
 /* parent */
 .bg{
 display: flex;
 margin:  60px 80px 0px;
+
 }
 
+.bgg{
+    color:#B24040; 
+    background: #F0D0C9; 
+    font-size: 2em;
+    padding: 60px;
+    width: 50%;
+}
 /* img */
 /*  */
 .bge{
  height: 920px;
+ width: 50%;
 }
 
 /* icon */
@@ -1303,6 +1320,8 @@ margin:  60px 80px 0px;
     .whle{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        
     }
 
     .whl{ display: flex;
@@ -1312,11 +1331,25 @@ margin:  60px 80px 0px;
 
     .bg{ display: flex;
         flex-direction: column;
+    }
 
+    .bgg {
+        width: 75%;
+   
+    }
+    /* img abt */
+    .bge{
+        width: 100%;
+    }
+
+    /* img abt */
+    .sde{
+        width: 100%;
     }
 
     .line {
-        width: 80%;
+        width: 100%;
+        margin: 0px 20px;
     }
 
     .lin {
@@ -1453,5 +1486,7 @@ margin:  60px 80px 0px;
         padding: 35px;
     }
 
-    
+
+ 
+
 }  
