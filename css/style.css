@@ -482,8 +482,8 @@ body {
     background-position: 50% 90%;
     background-image: url(../tourism-img/home-page/A-Man-Sitting-Outside-of-the-Famous-Petra.jpg);
     background-attachment: fixed;
-    background-size: cover;
-    object-fit: fill;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .hiro2 {
@@ -652,6 +652,7 @@ holi {
     background-image: url(/tourism-img/southkorea-about/Car-Passing-Through-Road-Beside-Building-Photo.jpg);
     background-size: 100%;
     background-position: 0% 90%;
+    background-repeat: no-repeat;
 }
 /*Demographics and major Cities Section*/
 .imgdmc {
@@ -659,12 +660,14 @@ holi {
     background-image: url(/tourism-img/southkorea-about/People-Walking-On-Street-During-Daytime-Photo.jpg);
     background-size: 150%;
     background-position: 0% 80%;
+    background-repeat: no-repeat;
 }
 /*Exports Section*/
 .imgex {
     width: 50%;
     background-image: url(/tourism-img/southkorea-about/Assorted-Clothes-Inside-Room-Photo.jpg);
     background-size: 120%;
+    background-repeat: no-repeat;
     background-position: 0% 75%;
 }
 /*Natural Locations Section*/
@@ -672,6 +675,7 @@ holi {
     width: 50%;
     background-image: url(/tourism-img/southkorea-about/Brown-And-Red-Trees-During-Daytime-Photo.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     background-position: 50% 75%;
 }
 /*Cultural Overview Section*/
@@ -680,6 +684,7 @@ holi {
     background-image: url(/tourism-img/southkorea-about/Free-Seoul.jpg);
     background-size: 100%;
     background-position: 50% 80%;
+    background-repeat: no-repeat;
 }
 
 /*Brief History Section*/
@@ -688,6 +693,7 @@ holi {
     background-image: url(/tourism-img/southkorea-about/South-Korea-Palace-Traditional.jpg);
     background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*South Korea Discover Page*/
@@ -720,6 +726,7 @@ holi {
     background-position: center;
     height: 47%;
     margin-bottom: 20px;
+    background-repeat: no-repeat;
 }
 
 .imgtc2 {
@@ -728,6 +735,7 @@ holi {
     background-size: 100%;
     background-position: center;
     height: 51%;
+    background-repeat: no-repeat;
 }
 
 .art {
@@ -815,17 +823,20 @@ holi {
     background-size: 100%;
     background-image: url(/tourism-img/southkorea-visit/People-Walking-On-Pedestrian-Lane-During-Daytime-Photo.jpg);
     width: 30%;
+    background-repeat: no-repeat;
 }
 .skvis2 {
     background-image: url(/tourism-img/southkorea-visit/Vehicle-On-Gray-Concrete-Road-Taken-At-Daytime-Photo.jpg);
     height: 30vh;
     background-size: 100%;
     width: 30%;
+    background-repeat: no-repeat;
 }
 .skvis3 {
     height: 30vh;
     width: 30%;
     background-size: 100%;
+    background-repeat: no-repeat;
     background-image: url(/tourism-img/southkorea-visit/Seoul-South-Korea-Subway-Train.jpg);
 }
 .textylov {
@@ -1395,6 +1406,10 @@ margin:  60px 80px 0px;
 /* phone */
 @media screen and (max-width: 480px) { 
     /*For Home Page*/
+
+    .hiro1, .hiro2, .hiro3, .hiro4, .hiro5, .hiro6, .hiro7, .hiro8, .hiro9, .hiro10, .hiro11 {
+        background-position: 50% center;
+    }
 
     .hopa { 
         display: flex;
